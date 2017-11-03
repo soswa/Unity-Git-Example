@@ -9,4 +9,9 @@ public class Hello : MonoBehaviour
     {
         Debug.Log("Hello");
     }
+
+    private void Update()
+    {
+        transform.Rotate(0f, 30f * Time.deltaTime, 0f);
+    }
 }
